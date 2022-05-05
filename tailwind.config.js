@@ -21,11 +21,17 @@ module.exports = {
         'btn-primary-hover': '#FFAC6B',
         'btn-default-hover': '#263B50',
       },
+      fontSize: {
+        'heading': '62px',
+        'subheading': '32px',
+        'body': '18px',
+        'labels': '16px',
+        'code': '14px',
+      },
       fontFamily: {
         'fira': ['"Fira Code"', '"monospace"'],
       }
     },
-
   },
   plugins: [],
 }

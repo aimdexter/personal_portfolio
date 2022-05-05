@@ -2,31 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .main{
-    @apply border-2 border-secondary-gray-light
-    rounded-lg bg-primary-blue-light w-screen h-screen;
-  }
-  .btn-primary {
-    @apply text-primary-blue-dark 
-    hover:bg-btn-primary-hover font-fira 
-    bg-accent-orange rounded-lg text-xs 
-    font-medium p-2 m-3;
-  }
-  .btn-default {
-    @apply text-white font-fira 
-    hover:bg-btn-default-hover 
-    bg-btn-bg-default rounded-lg 
-    text-xs font-medium p-2 m-3;
-  }
-  .btn-ghost {
-    @apply text-white font-fira bg-transparent 
-    hover:border-opacity-50 border-white border-2 
-    rounded-lg text-xs font-medium p-2 m-3;
-  }
-
-  i{
-    @apply bg-primary-blue-light p-2 w-5 h-6 
-    text-secondary-green-light;
+@media only screen and (min-width: 600px) {
+  @layer components {
+    .main{
+      @apply container mx-auto h-[1500px] 
+      bg-primary-blue-light rounded-lg
+      text-secondary-gray-light text-labels
+    }
+    .menu{
+      @apply border-2 rounded-t-lg border-line
+      flex justify-between
+    }
+    .mid{
+      @apply hidden lg:hidden
+    }
+    .ri-menu-line{
+      @apply flex
+    }
+    .name{
+      @apply flex border-line border-r-2 lg:py-4 lg:pl-4 lg:pr-28
+    }
+    .hello{
+      @apply border-line border-r-2 lg:p-4
+    }
+    .about{
+      @apply border-line border-r-2 lg:p-4
+    }
+    .projects{
+      @apply border-line border-r-2 lg:p-4
+    }
+    .contact{
+      @apply hidden border-line border-r-2 lg:p-4
+    }
+    
+    .btn-primary {
+      @apply text-primary-blue-dark 
+      hover:bg-btn-primary-hover font-fira 
+      bg-accent-orange rounded-lg text-xs 
+      font-medium p-2 m-3
+    }
+    .btn-default {
+      @apply text-white font-fira 
+      hover:bg-btn-default-hover 
+      bg-btn-bg-default rounded-lg 
+      text-xs font-medium p-2 m-3
+    }
+    .btn-ghost {
+      @apply text-white font-fira bg-transparent 
+      hover:border-opacity-50 border-white border-2 
+      rounded-lg text-xs font-medium p-2 m-3
+    }
+    .buttons {
+      @apply hidden
+    }
+    .icons{
+      @apply bg-primary-blue-light p-2 w-5 h-6 
+      text-secondary-green-light hidden
+    }
   }
 }
