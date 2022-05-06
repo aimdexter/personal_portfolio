@@ -2,25 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-@media only screen and (min-width: 600px) {
   @layer components {
+    #app{
+       @apply p-2 bg-primary-blue-dark h-screen
+    }
+    .content{
+    }
     .main{
-      @apply container mx-auto h-[1500px] 
+      @apply container mx-auto h-44
       bg-primary-blue-light rounded-lg
       text-secondary-gray-light text-labels
     }
     .menu{
       @apply border-2 rounded-t-lg border-line
-      flex justify-between
+    }
+    .home{
+      @apply p-4 flex justify-between;
+    }
+    .name{
+      @apply flex 
+      lg:border-line lg:border-r-2 lg:py-4 lg:pl-4 lg:pr-28
     }
     .mid{
       @apply hidden lg:hidden
-    }
-    .ri-menu-line{
-      @apply flex
-    }
-    .name{
-      @apply flex border-line border-r-2 lg:py-4 lg:pl-4 lg:pr-28
     }
     .hello{
       @apply border-line border-r-2 lg:p-4
@@ -60,4 +64,3 @@
       text-secondary-green-light hidden
     }
   }
-}
