@@ -4,12 +4,11 @@
 
   @layer components {
     #app{
-       @apply p-2 bg-primary-blue-dark h-screen
-    }
-    .content{
+       @apply p-2 bg-primary-blue-dark
+       font-fira 
     }
     .main{
-      @apply container mx-auto h-44
+      @apply container mx-auto
       bg-primary-blue-light rounded-lg
       text-secondary-gray-light text-labels
     }
@@ -38,6 +37,42 @@
     .contact{
       @apply hidden border-line border-r-2 lg:p-4
     }
+    .my_description{
+      @apply text-text flex flex-col justify-evenly
+      w-full  items-center h-[600px]
+    }
+    .desc_second{
+      @apply w-3/4 
+    }
+    .hi{
+      @apply text-body 
+    }
+    .my_name{
+      @apply text-heading leading-tight
+    }
+    .front_dev{
+      @apply text-body-lg text-secondary-green-light
+    }
+    .code_snipet{
+      @apply w-3/4 space-y-4 text-code
+    }
+    .find_me{
+      @apply  text-secondary-gray-light
+    }
+    .code{
+      @apply flex 
+    }
+    span{
+      white-space:nowrap;
+    }
+    .var{
+      @apply text-secondary-blue-soft
+    }
+
+
+
+
+
     
     .btn-primary {
       @apply text-primary-blue-dark 

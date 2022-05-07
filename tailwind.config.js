@@ -17,6 +17,7 @@ module.exports = {
         'accent-red': '#E99287',
         'accent-pink': '#C98BDF',
         'line': '#1E2D3D',
+        'text': '#E5E9F0',
         'btn-bg-default': '#1C2B3A',
         'btn-primary-hover': '#FFAC6B',
         'btn-default-hover': '#263B50',
@@ -24,6 +25,7 @@ module.exports = {
       fontSize: {
         'heading': '62px',
         'subheading': '32px',
+        'body-lg': '20px',
         'body': '18px',
         'labels': '16px',
         'code': '14px',
