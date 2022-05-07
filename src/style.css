@@ -4,7 +4,7 @@
 
   @layer components {
     #app{
-       @apply p-3 bg-primary-blue-dark
+       @apply p-2 bg-primary-blue-dark
        font-fira overflow-hidden h-screen w-screen
     }
     .main{
@@ -13,10 +13,10 @@
       text-secondary-gray-light text-labels
     }
     .content{
-      @apply h-full
+      @apply h-full border-[1.5px] rounded-lg border-line
     }
     .menu{
-      @apply border-2 rounded-t-lg border-line
+      @apply border-b-[1.5px] rounded-t-lg border-line m-0 p-0
     }
     .home{
       @apply p-4 flex justify-between;
@@ -43,6 +43,7 @@
     .my_description{
       @apply text-text flex flex-col justify-evenly
       items-center relative overflow-hidden h-full
+      
     }
     .bg{
       @apply absolute
