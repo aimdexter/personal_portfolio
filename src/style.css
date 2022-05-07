@@ -16,15 +16,15 @@
       @apply h-full border-[1.5px] rounded-lg border-line
     }
     .menu{
-      @apply border-b-[1.5px] rounded-t-lg border-line m-0 p-0
+      @apply border-b-[1.5px] rounded-t-lg border-line
     }
     .home{
-      @apply p-4 flex justify-between;
+      @apply flex justify-between items-center px-5 h-16
     }
     .name{
-      @apply flex 
+      @apply flex h-full items-center
       lg:border-line lg:border-r-2 lg:py-4 lg:pl-4 lg:pr-28
-    }
+    } 
     .mid{
       @apply hidden lg:hidden
     }
