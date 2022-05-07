@@ -4,13 +4,16 @@
 
   @layer components {
     #app{
-       @apply p-2 bg-primary-blue-dark
-       font-fira 
+       @apply p-3 bg-primary-blue-dark
+       font-fira overflow-hidden h-screen w-screen
     }
     .main{
-      @apply container mx-auto
+      @apply container mx-auto h-full
       bg-primary-blue-light rounded-lg
       text-secondary-gray-light text-labels
+    }
+    .content{
+      @apply h-full
     }
     .menu{
       @apply border-2 rounded-t-lg border-line
@@ -39,7 +42,10 @@
     }
     .my_description{
       @apply text-text flex flex-col justify-evenly
-      w-full  items-center h-[600px]
+      items-center relative overflow-hidden h-full
+    }
+    .bg{
+      @apply absolute
     }
     .desc_second{
       @apply w-3/4 
@@ -60,15 +66,17 @@
       @apply  text-secondary-gray-light
     }
     .code{
-      @apply flex 
-    }
-    span{
-      white-space:nowrap;
+      @apply flex flex-row flex-wrap gap-x-3
     }
     .var{
       @apply text-secondary-blue-soft
     }
-
+    .git{
+      @apply text-secondary-green-light
+    }
+    .http{
+      @apply text-accent-orange
+    }
 
 
 

@@ -30,6 +30,9 @@ module.exports = {
         'labels': '16px',
         'code': '14px',
       },
+      backgroundImage: {
+        'backgroundimage': "url('./src/assets/Blursgradient.svg')",
+      },
       fontFamily: {
         'fira': ['"Fira Code"', '"monospace"'],
       }
