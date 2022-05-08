@@ -43,14 +43,20 @@
       @apply col-span-3  p-4 w-full
     }
     .twitter{
-    @apply border-line border-l-[1.5px] w-full p-4
+    @apply border-line border-l-[1.5px] w-full p-4 
+    pl-5
     }
     .facebook{
       @apply border-line border-l-[1.5px] w-full p-4
+      pl-5
       }
       .github{
         @apply border-line border-l-[1.5px] w-full p-4
-        }
+        pl-6
+      }
+      i{
+         @apply text-secondary-gray-light
+      }
     .hello{
       @apply border-line border-b-[1.5px] p-4 text-text
       lg:border-r-2 lg:p-4
