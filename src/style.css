@@ -5,7 +5,7 @@
   @layer components {
     #app{
        @apply p-2 bg-primary-blue-dark
-       font-fira overflow-hidden h-screen w-screen
+       font-fira overflow-hidden h-screen
     }
     .main{
       @apply container mx-auto h-full
@@ -13,37 +13,65 @@
       text-secondary-gray-light text-labels
     }
     .content{
-      @apply h-full border-[1.5px] rounded-lg border-line
+      @apply h-full border-[1.5px] 
+       rounded-lg border-line w-full
     }
     .menu{
       @apply border-b-[1.5px] rounded-t-lg border-line
+      overflow-hidden w-full h-full
     }
     .home{
-      @apply flex justify-between items-center px-5 h-16
+      @apply flex justify-between items-center px-5 h-16 
+      border-b-[1.5px] border-line
     }
     .name{
       @apply flex h-full items-center
       lg:border-line lg:border-r-2 lg:py-4 lg:pl-4 lg:pr-28
     } 
-    .mid{
-      @apply hidden lg:hidden
+    .active_menu{
+       @apply h-[90vh] flex flex-col justify-between
     }
+    .hidden_menu{
+      @apply flex flex-col gap-4
+    }
+    .find_me2{
+      @apply grid grid-cols-6 w-full justify-between
+      border-t-[1.5px] justify-items-center place-self-end
+      border-line 
+    }
+    .find{
+      @apply col-span-3 place-self-start p-4
+      border-line border-r-[1.5px] w-full
+    }
+    .twitter{
+    @apply border-line border-l-[1.5px] w-full p-4
+    }
+    .facebook{
+      @apply border-line border-l-[1.5px] w-full p-4
+      }
+      .github{
+        @apply border-line border-l-[1.5px] w-full p-4
+        }
     .hello{
-      @apply border-line border-r-2 lg:p-4
+      @apply border-line border-b-[1.5px] p-4 text-text
+      lg:border-r-2 lg:p-4
     }
     .about{
-      @apply border-line border-r-2 lg:p-4
+      @apply border-line border-b-[1.5px] p-4 text-text 
+      lg:border-r-2 lg:p-4
     }
     .projects{
-      @apply border-line border-r-2 lg:p-4
+      @apply border-line border-b-[1.5px] p-4 text-text 
+      lg:border-r-2 lg:p-4
     }
     .contact{
-      @apply hidden border-line border-r-2 lg:p-4
+      @apply border-line border-b-[1.5px] p-4 text-text 
+      lg:border-r-2 lg:p-4
     }
     .my_description{
       @apply text-text flex flex-col justify-evenly
       items-center relative overflow-hidden h-full
-      
+      w-screen hidden
     }
     .bg{
       @apply absolute
