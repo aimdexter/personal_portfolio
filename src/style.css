@@ -40,7 +40,7 @@
     }
     .find_me2{
       @apply flex w-full items-center
-      border-y-[1.5px] border-line h-12
+      border-b-[1.5px] border-line h-12
     }
     .find{
       @apply w-full pl-4
