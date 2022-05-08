@@ -3,6 +3,10 @@
 @tailwind utilities;
 
   @layer components {
+
+    .body {
+      @apply h-screen w-screen
+    }
     #app{
        @apply p-2 bg-primary-blue-dark
        font-fira overflow-hidden h-screen
@@ -29,14 +33,14 @@
       lg:border-line lg:border-r-2 lg:py-4 lg:pl-4 lg:pr-28
     } 
     .active_menu{
-       @apply h-[91vh] flex flex-col justify-between
+       @apply flex flex-col justify-between
     }
     .hidden_menu{
-      @apply flex flex-col gap-4
+      @apply flex flex-col gap-4 relative
     }
     .find_me2{
       @apply flex w-full items-center
-      border-t-[1.5px] border-line h-12
+      border-y-[1.5px] border-line h-12
     }
     .find{
       @apply w-full pl-4
@@ -62,7 +66,7 @@
       }
     .hello{
       @apply border-line border-b-[1.5px] p-4
-      lg:border-r-2 lg:p-4
+      lg:border-r-2 lg:p-4 text-text
     }
     .about{
       @apply border-line border-b-[1.5px] p-4 text-text 
