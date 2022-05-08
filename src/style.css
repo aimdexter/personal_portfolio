@@ -30,7 +30,7 @@
     } 
     .active_menu{
        @apply flex flex-col justify-between absolute
-        w-full z-10 bg-primary-blue-light
+        w-full z-10 bg-primary-blue-light hidden
     }
     .hidden_menu{
       @apply flex flex-col gap-4 relative
