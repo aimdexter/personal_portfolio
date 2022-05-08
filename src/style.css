@@ -3,10 +3,6 @@
 @tailwind utilities;
 
   @layer components {
-
-    .body {
-      @apply h-screen w-screen
-    }
     #app{
        @apply p-2 bg-primary-blue-dark
        font-fira overflow-hidden h-screen
@@ -18,22 +14,23 @@
     }
     .content{
       @apply h-full border-[1.5px] 
-       rounded-lg border-line w-full
+       rounded-lg border-line w-full relative
     }
     .menu{
       @apply rounded-t-lg 
-      overflow-hidden w-full h-full
+      overflow-hidden w-full
     }
     .home{
       @apply flex justify-between items-center px-5 h-16 
-      border-b-[1.5px] border-line
+      border-b-[1.5px] border-line 
     }
     .name{
       @apply flex h-full items-center
       lg:border-line lg:border-r-2 lg:py-4 lg:pl-4 lg:pr-28
     } 
     .active_menu{
-       @apply flex flex-col justify-between
+       @apply flex flex-col justify-between absolute
+        w-full z-10 bg-primary-blue-light
     }
     .hidden_menu{
       @apply flex flex-col gap-4 relative
@@ -83,7 +80,7 @@
     .my_description{
       @apply text-text flex flex-col justify-evenly
       items-center relative overflow-hidden h-full
-      w-screen hidden
+      w-screen
     }
     .bg{
       @apply absolute
