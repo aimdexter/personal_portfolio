@@ -35,30 +35,33 @@
       @apply flex flex-col gap-4
     }
     .find_me2{
-      @apply grid grid-cols-6 w-full justify-between
-      border-t-[1.5px] justify-items-center place-self-end
-      border-line 
+      @apply flex w-full items-center
+      border-t-[1.5px] border-line h-12
     }
     .find{
-      @apply col-span-3  p-4 w-full
+      @apply w-full pl-4
+    }
+    .links{
+       @apply flex w-1/2 h-full justify-between
+       items-center
     }
     .twitter{
-    @apply border-line border-l-[1.5px] w-full p-4 
-    pl-5
+    @apply border-line border-l-[1.5px] flex items-center
+     justify-center w-full h-full
     }
     .facebook{
-      @apply border-line border-l-[1.5px] w-full p-4
-      pl-5
+      @apply border-line border-l-[1.5px] w-full h-full
+      flex items-center justify-center
       }
       .github{
-        @apply border-line border-l-[1.5px] w-full p-4
-        pl-6
+        @apply border-line border-l-[1.5px] w-full h-full 
+      flex items-center justify-center 
       }
       i{
          @apply text-secondary-gray-light
       }
     .hello{
-      @apply border-line border-b-[1.5px] p-4 text-text
+      @apply border-line border-b-[1.5px] p-4
       lg:border-r-2 lg:p-4
     }
     .about{
