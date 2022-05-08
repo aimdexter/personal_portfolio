@@ -29,7 +29,7 @@
       lg:border-line lg:border-r-2 lg:py-4 lg:pl-4 lg:pr-28
     } 
     .active_menu{
-       @apply h-[90vh] flex flex-col justify-between
+       @apply h-[91vh] flex flex-col justify-between
     }
     .hidden_menu{
       @apply flex flex-col gap-4
@@ -40,8 +40,7 @@
       border-line 
     }
     .find{
-      @apply col-span-3 place-self-start p-4
-      border-line border-r-[1.5px] w-full
+      @apply col-span-3  p-4 w-full
     }
     .twitter{
     @apply border-line border-l-[1.5px] w-full p-4
