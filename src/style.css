@@ -17,7 +17,7 @@
        rounded-lg border-line w-full
     }
     .menu{
-      @apply border-b-[1.5px] rounded-t-lg border-line
+      @apply rounded-t-lg 
       overflow-hidden w-full h-full
     }
     .home{
