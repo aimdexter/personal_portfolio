@@ -53,14 +53,14 @@
     .facebook{
       @apply border-line border-l-[1.5px] w-full h-full
       flex items-center justify-center
-      }
-      .github{
+    }
+    .github{
         @apply border-line border-l-[1.5px] w-full h-full 
       flex items-center justify-center 
-      }
-      i{
+    }
+    i{
          @apply text-secondary-gray-light
-      }
+    }
     .hello{
       @apply border-line border-b-[1.5px] p-4
       lg:border-r-2 lg:p-4 text-text
@@ -115,7 +115,28 @@
     .http{
       @apply text-accent-orange
     }
-
+    .list{
+      @apply w-full flex flex-col gap-1
+    }
+    .title{
+      @apply text-text border-line border-b-[1.5px]
+      p-5
+    }
+    .infos{
+      @apply flex bg-line p-1 items-center text-text
+    }
+    .ri-arrow-right-s-fill{
+      @apply text-text p-1
+    }
+    .infos_details{
+      @apply p-4
+    }
+    .info_title{
+      @apply py-4
+    }
+    .personal_info{
+      @apply text-text py-4
+    }
 
 
 
