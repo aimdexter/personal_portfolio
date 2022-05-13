@@ -7,6 +7,10 @@
        @apply p-2 bg-primary-blue-dark
        font-fira overflow-hidden h-screen
     }
+    #app_about{
+      @apply p-2 bg-primary-blue-dark
+      font-fira
+   }
     .main{
       @apply container mx-auto h-full
       bg-primary-blue-light rounded-lg
@@ -137,7 +141,18 @@
     .personal_info{
       @apply text-text py-4
     }
-
+    .profil{
+      @apply flex items-center gap-4
+    }
+    .name{
+      @apply text-secondary-blue-soft
+    }
+    .my_profil{
+      @apply flex justify-between 
+    }
+    .details{
+      @apply hover:text-text
+    }
 
 
     
